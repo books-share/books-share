@@ -13,4 +13,48 @@
         <item name="android:windowIsTranslucent">true</item>
     </style>
 
+    <style name="all_match_parent">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="all_wrap_content">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="btn_long_yellow">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">#ff333333</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/bg_btn_yellow</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">40.0dip</item>
+        <item name="android:layout_marginLeft">30.0dip</item>
+        <item name="android:layout_marginRight">30.0dip</item>
+    </style>
+
+    <style name="top_relativelayout">
+        <item name="android:background">@color/bg_yellow</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">50.0dip</item>
+    </style>
+
+    <style name="top_textview">
+        <item name="android:textSize">17.0sp</item>
+        <item name="android:textColor">@color/tx_black</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="view_horizontal">
+        <item name="android:background">@color/stroke_graiy_common</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0.5dip</item>
+    </style>
+    <style name="view_vertical">
+        <item name="android:background">@color/stroke_graiy_common</item>
+        <item name="android:layout_width">0.5dip</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+
 </resources>

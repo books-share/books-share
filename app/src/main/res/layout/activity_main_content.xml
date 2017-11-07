@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/all_match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        style="@style/all_match_parent"
+        android:background="@color/bg_background"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/top"
+            style="@style/top_relativelayout">
+
+            <RelativeLayout
+                android:id="@+id/searchRt"
+                android:layout_width="fill_parent"
+                android:layout_height="30.0dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginRight="5.0dip"
+
+                android:layout_toRightOf="@+id/back"
+                android:background="@drawable/bg_btn_yellow_dark">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <ImageView
+                        android:layout_width="30.0dip"
+                        android:layout_height="30.0dip"
+                        android:padding="7.0dip"
+                        android:src="@mipmap/shouye_search" />
+
+                    <TextView
+                        android:id="@+id/searchEt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="30.0dip"
+                        android:text="搜索"
+                        android:textColor="@color/tx_black"
+                        android:textSize="14.0sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/swipe_refresh_widget"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/bg_background"
+                android:dividerHeight="1.0dip"
+                android:scrollbars="none" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="8.0dip"
+                android:background="@mipmap/shadow_top_yellow" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/bookRecyclerView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:paddingTop="45dp"
+                android:scrollbars="vertical" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="3.0dip"
+                android:layout_gravity="bottom"
+                android:background="@mipmap/shawdow" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@id/firstRt"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="200.0dip"
+            android:layout_height="40.0dip"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30.0dip"
+            android:src="@mipmap/bg_main_first" />
+    </RelativeLayout>
+</FrameLayout>

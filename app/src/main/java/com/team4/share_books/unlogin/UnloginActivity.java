@@ -5,6 +5,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
@@ -15,6 +16,10 @@ import com.team4.share_books.unlogin.fragment.ExperienceFragment;
 import com.team4.share_books.unlogin.fragment.HomeFragment;
 import com.team4.share_books.unlogin.fragment.MessageFragment;
 import com.team4.share_books.unlogin.fragment.ProfileFragment;
+
+import io.rong.imkit.RongIM;
+import io.rong.imlib.RongIMClient;
+
 
 public class UnloginActivity extends AppCompatActivity {
 
@@ -41,6 +46,29 @@ public class UnloginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.unlogin_main_activity_layout);
         mContext = this;
+        Log.d("onSuccess","init");
+
+        RongIM.init(this);
+
+        RongIM.connect("IxBl9WmwB58ESuhH6nJQTmG+y6HMLM5pAqIkTANGAv47dFQUfArw+d0ixOUoJRRMleD2UpfSxKhcZ/xb3sybx626iTiv2C7I",
+                new RongIMClient.ConnectCallback() {
+                    @Override
+                    public void onTokenIncorrect() {
+
+                    }
+
+                    @Override
+                    public void onSuccess(String s) {
+                        Log.d("onSuccess","user id : " + s);
+
+                    }
+
+                    @Override
+                    public void onError(RongIMClient.ErrorCode errorCode) {
+                        Log.d("onError","onError" + errorCode);
+                    }
+                });
+
         mHomeTab = (RelativeLayout) findViewById(R.id.tv_home);
         mMessageTab = (RelativeLayout) findViewById(R.id.tv_message);
         mExperienceTab = (RelativeLayout) findViewById(R.id.tv_experience);

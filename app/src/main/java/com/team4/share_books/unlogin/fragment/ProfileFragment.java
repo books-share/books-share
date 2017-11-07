@@ -25,7 +25,7 @@ public class ProfileFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        mView = inflater.inflate(R.layout.unlogin_profilefragment_layout, container, false);
+        mView = inflater.inflate(R.layout.activity_mine, container, false);
         return mView;
     }
 

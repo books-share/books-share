@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.team4.share_books.login.view.PullToRefreshRecyclerView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   </com.team4.share_books.login.view.PullToRefreshRecyclerView>
