@@ -1,4 +1,4 @@
-package com.team4.share_books.unlogin.fragment;
+package com.team4.share_books.login.fragment;
 
 
 import android.os.Bundle;
@@ -6,7 +6,6 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import com.team4.share_books.R;
 

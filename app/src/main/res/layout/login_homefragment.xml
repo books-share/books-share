@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/all_match_parent"
+    android:background="@color/bg_background"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        style="@style/top_relativelayout">
+
+        <RelativeLayout
+            android:id="@id/searchRt"
+            android:layout_width="fill_parent"
+            android:layout_height="30.0dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginRight="5.0dip"
+            android:layout_toRightOf="@id/back"
+            android:background="@drawable/bg_btn_yellow_dark">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@id/searchImg"
+                    android:layout_width="30.0dip"
+                    android:layout_height="30.0dip"
+                    android:padding="7.0dip"
+                    android:src="@mipmap/shouye_search" />
+
+                <TextView
+                    android:id="@id/searchEt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30.0dip"
+                    android:text="搜索"
+                    android:textColor="@color/tx_black"
+                    android:textSize="14.0sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <com.team4.share_books.login.view.PullToRefreshRecyclerView
+            android:id="@+id/mylist"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/bg_background"
+            android:cacheColorHint="#00000000"
+            android:divider="@color/trans"
+            android:dividerHeight="6.0dip"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:scrollbars="none"
+            android:smoothScrollbar="true" />
+
+        <ImageView
+            android:id="@id/backTopImg"
+            android:layout_width="40.0dip"
+            android:layout_height="40.0dip"
+            android:layout_gravity="bottom|center|right"
+            android:layout_marginBottom="12.0dip"
+            android:layout_marginRight="10.0dip"
+            android:src="@mipmap/back_to_top"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="3.0dip"
+            android:layout_gravity="bottom"
+            android:background="@mipmap/shawdow" />
+    </FrameLayout>
+</LinearLayout>

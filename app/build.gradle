@@ -28,6 +28,7 @@ dependencies {
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.android.support:support-v4:26.+'
     compile 'me.imid.swipebacklayout.lib:library:1.0.0'
+    compile 'com.github.bumptech.glide:glide:3.6.1'
     compile 'com.android.support:recyclerview-v7:26.+'
     testCompile 'junit:junit:4.12'
     compile project(':IMKit')
@@ -35,4 +36,6 @@ dependencies {
     compile files('libs/AMap_2DMap_V2.9.0_20160525.jar')
     compile files('libs/AMap_Channel_Location_V1.4.0_20160708.jar')
     compile project(':pullToRefresh')
+    compile files('libs/open_sdk_r5886_lite.jar')
+    compile 'com.alibaba:fastjson:1.1.65.android'
 }

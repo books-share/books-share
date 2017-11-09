@@ -1,6 +1,7 @@
 package com.team4.share_books.login.view;
 
-import cn.buteyi.weiboto.entities.newEntity.UserEntity;
+
+import com.team4.share_books.entities.UserEntity;
 
 /**
  * Created by john on 2017/1/10.

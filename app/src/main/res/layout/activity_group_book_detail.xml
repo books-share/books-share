@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:layout_marginBottom="45dp">
+
+    <RelativeLayout
+        android:id="@id/top"
+        style="@style/top_relativelayout">
+
+        <ImageView
+            android:id="@id/back"
+            style="@style/top_imageview" />
+
+        <TextView
+            style="@style/top_textview"
+            android:text="书籍详情" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/bg_background"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="220.0dip"
+                android:background="@color/bg_white"
+                android:paddingLeft="13.0dip"
+                android:paddingRight="13.0dip">
+
+                <ImageView
+                    android:id="@id/bookImg"
+                    android:layout_width="110.0dip"
+                    android:layout_height="140.0dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10.0dip"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/mine_buy"/>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="210.0dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_toRightOf="@id/bookImg">
+
+                    <TextView
+                        android:id="@id/bookNameTx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textColor="@color/tx_black"
+                        android:textSize="16.0sp"
+                        android:text="书名"/>
+
+                    <TextView
+                        android:id="@id/authorTx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:layout_marginTop="10dip"
+                        android:textColor="@color/tx_black"
+                        android:layout_below="@id/bookNameTx"
+                        android:textSize="16.0sp"
+                        android:text="作者"/>
+
+                    <TextView
+                        android:id="@id/priceTx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:layout_marginTop="10dip"
+                        android:textColor="@color/tx_black"
+                        android:layout_below="@id/authorTx"
+                        android:textSize="16.0sp"
+                        android:text="价格"/>
+
+                    <TextView
+                        android:id="@id/publishTx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:layout_marginTop="10dip"
+                        android:textColor="@color/tx_black"
+                        android:layout_below="@id/priceTx"
+                        android:textSize="16.0sp"
+                        android:text="出版社"/>
+
+                    <TextView
+                        android:id="@+id/pagenumTx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:layout_marginTop="10dip"
+                        android:textColor="@color/tx_black"
+                        android:layout_below="@id/publishTx"
+                        android:textSize="16.0sp"
+                        android:text="页数"/>
+
+                    <TextView
+                        android:id="@+id/ISBNTx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:layout_marginTop="10dip"
+                        android:textColor="@color/tx_black"
+                        android:layout_below="@id/pagenumTx"
+                        android:textSize="16.0sp"
+                        android:text="ISBN"/>
+
+                    <TextView
+                        android:id="@+id/returntypeTx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:layout_marginTop="10dip"
+                        android:textColor="@color/tx_black"
+                        android:layout_below="@id/ISBNTx"
+                        android:textSize="16.0sp"
+                        android:text="类型"/>
+
+
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/owerTx"
+                android:layout_width="wrap_content"
+                android:layout_height="40.0dip"
+                android:layout_marginTop="8.0dip"
+                android:clickable="false"
+                android:background="@drawable/btn_shape"
+                android:gravity="center_vertical"
+                android:paddingLeft="15.0dip"
+                android:textColor="@color/tx_black"
+
+                android:text="主人评语："/>
+
+            <TextView
+                android:id="@+id/owerContextTx"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6.0dip"
+                android:background="@color/bg_white"
+                android:gravity="center_vertical"
+                android:paddingLeft="35.0dip"
+                android:textColor="@color/tx_black"
+                android:paddingTop="5dip"
+                android:layout_marginLeft="6dip"
+                android:paddingBottom="5dip"
+                android:text="评语内容但是发放按时发达阿斯蒂芬发书safsfasdfafasfdasfsfasdfsfsafsdfasfsafsafdsfaf手动阀按时发达沙发发"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40.0dip"
+                android:layout_marginTop="8.0dip"
+                android:clickable="false"
+                android:background="@drawable/btn_shape"
+                android:gravity="center_vertical"
+                android:paddingLeft="15.0dip"
+                android:textColor="@color/tx_black"
+                android:text="图书简介："/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@color/bg_btn_gray"
+                android:layout_marginLeft="30dip"
+                android:layout_marginRight="30dip"
+                android:layout_marginTop="5dip"/>
+
+            <TextView
+                android:id="@+id/tushujianjie"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6.0dip"
+                android:background="@color/bg_white"
+                android:gravity="center_vertical"
+                android:paddingLeft="35.0dip"
+                android:textColor="@color/tx_black"
+                android:paddingTop="5dip"
+                android:layout_marginLeft="6dip"
+                android:paddingBottom="5dip"
+                android:text="评语内容但是发放按时发达阿斯蒂芬发
+书safsfasdfafasfdasfsfasdfsfsafsdfasfsafsafdsfaf手动阀按时
+                发达沙发发书safsfasdfafasfdasfsfasdfsfsafsdfasfsafsafdsfaf手动阀按时
+                发达沙发发书safsfasdfafasfdasfsfasdfsfsafsdfasfsafsafdsfaf手动阀按时
+                发达沙发发书safsfasdfafasfdasfsfasdfsfsafsdfasfsafsafdsfaf手动阀按时
+                发达沙发发书safsfasdfafasfdasfsfasdfsfsafsdfasfsafsafdsfaf手动阀按时
+                发达沙发发书safsfasdfafasfdasfsfasdfsfsafsdfasfsafsafdsfaf手动阀按时
+                发达沙发发书safsfasdfafasfdasfsfasdfsfsafsdfasfsafsafdsfaf手动阀按时
+                发达沙发发书safsfasdfafasfdasfsfasdfsfsafsdfasfsafsafdsfaf手动阀按时
+                发达沙发发书safsfasdfafasfdasfsfasdfsfsafsdfasfsafsafdsfaf手动阀按时
+                发达沙发发书safsfasdfafasfdasfsfasdfsfsafsdfasfsafsafdsfaf手动阀按时
+                发达沙发发"/>
+
+            <Button
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:background="@drawable/send_button"
+                android:layout_marginLeft="50dip"
+                android:layout_marginTop="10dip"
+
+                android:text="申请借阅"/>
+
+            <Button
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:background="@drawable/send_button"
+                android:layout_marginTop="-49dip"
+                android:layout_marginLeft="200dip"
+
+                android:text="打招呼"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="7dip"
+                android:background="@color/bg_white"
+                android:layout_marginTop="3dip"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+</LinearLayout>

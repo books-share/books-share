@@ -145,5 +145,10 @@
             android:singleLine="true"
             android:textColor="@color/tx_detail_address"
             android:textSize="12.0sp" />
+
     </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#ffededef"/>
 </LinearLayout>

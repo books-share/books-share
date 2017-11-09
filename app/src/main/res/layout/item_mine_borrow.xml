@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="100.0dip"
+                android:background="@color/bg_white"
+                android:paddingLeft="13.0dip"
+                android:paddingRight="13.0dip">
+
+                <ImageView
+                    android:id="@+id/bookImgB"
+                    android:layout_width="68.0dip"
+                    android:layout_height="87.0dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10.0dip"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/mine_buy"/>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="100.0dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginTop="10dip"
+                    android:layout_toRightOf="@id/bookImgB">
+
+                    <TextView
+                        android:id="@+id/bookNameB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textColor="@color/tx_black"
+                        android:textSize="16.0sp"
+                        android:text="书名"/>
+
+                    <TextView
+                        android:id="@+id/authorTB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:layout_marginTop="10dip"
+                        android:textColor="@color/tx_black"
+                        android:layout_below="@id/bookNameB"
+                        android:textSize="16.0sp"
+                        android:text="作者"/>
+
+                    <TextView
+                        android:id="@+id/returndateTx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:layout_marginTop="10dip"
+                        android:textColor="@color/tx_black"
+                        android:layout_below="@id/authorTB"
+                        android:textSize="16.0sp"
+                        android:text="归还日期"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dip"
+        android:background="#ffededef">
+    </View>
+</LinearLayout>
